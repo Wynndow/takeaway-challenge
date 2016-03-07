@@ -10,7 +10,7 @@ The weekend challenge for week 2 of Makers Academy was to model a takeaway order
 0. Move into the new directory using ```$ cd takeaway-challenge```
 0. Install dependencies using `$ bundle`
 0. Set your Twilio account SID and auth token in your env variables as `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN` respectivly.
-0. Set your mobile phone number in your env variables as MY_MOBILE_NUMBER.
+0. Set your mobile phone number in your env variables as `MY_MOBILE_NUMBER`.
 
 #### Usage
 
