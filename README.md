@@ -1,10 +1,19 @@
-This is my submission for the Makers Academy week 2 weekend challenge.
+##Takeaway Challenge
 
-For this application to work, it is very important that you add your twilio account SID and auth token to your env variables as TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN. You can find these details here: https://www.twilio.com/user/account. You will also need to add your mobile phone number as MY_MOBILE_NUMBER. For the tests to work, you will also need to add your test account SID and your test auth token as TEST_TWILIO_ACCOUNT_SID and TEST_TWILIO_AUTH_TOKEN. These can be found here: https://www.twilio.com/user/account/phone-numbers/dev-tools/test-credentials
+#### About
 
-Please run ```Bundle``` from your command line to install all gems required.
+The weekend challenge for week 2 of Makers Academy was to model a takeaway ordering service. It was written in Ruby, and test driven with RSpec. It also utilises the Twilio API to send a confirmation SMS messages to the person placing the order.
 
-This application is designed to model a takeaway ordering service. Below is an example of how to run the code from PRY.
+#### Installation
+
+0. Clone this repo using ```$ git clone git@github.com:Wynndow/takeaway-challenge.git```
+0. Move into the new directory using ```$ cd takeaway-challenge```
+0. Install dependencies using `$ bundle`
+0. Set your Twilio account SID and auth token in your env variables as `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN` respectivly.
+0. Set your mobile phone number in your env variables as MY_MOBILE_NUMBER.
+
+#### Usage
+
 ```
 [1] pry(main)> load './lib/takeaway.rb'
 => true
@@ -15,12 +24,17 @@ starter : 5
 mains : 10
 desert : 3
 => nil
-[4] pry(main)> takeaway.order("starter", 2, "mains", 2, "desert", 1, 33)
+[4] pry(main)> takeaway.place_order("starter", 2, "mains", 2, "desert", 1, 33)
 => <Twilio::REST::Message @path=/2010-04-01/Accounts/ACaee8365e73fec8578fcc85122bac9918/Messages/SM149215a1506842b98ec63d6d3bdbb19d>
 ```
 
-Takeaway Challenge
-==================
+#### Running tests
+
+0. Set your Twilio test account SID and test auth token as TEST_TWILIO_ACCOUNT_SID and TEST_TWILIO_AUTH_TOKEN respectively.
+0. Tests are run form the command line using ```$ rspec```
+
+#### Original instructions
+
 
 Instructions
 -------
